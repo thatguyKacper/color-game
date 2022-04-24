@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+body {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: 'Coming Soon', cursive;
+    letter-spacing: 5px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    line-height: 1.7;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.r {
+    color: red;
+}
+
+.g {
+    color: green;
+}
+
+.b {
+    color: blue;
+}
+
+.colorDisplay {
+    font-size: 200%;
+}
+
+.menu {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.message {
+    display: inline-block;
+    width: 20%;
+    font-weight: 700;
+}
+
+button {
+    border: none;
+    background: none;
+    height: 100%;
+    font-weight: 700;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px;
+}
+
+.square {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    transition: background-color 500ms;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(3, 200px);
+    }
+}
